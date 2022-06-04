@@ -1,5 +1,5 @@
 [package]
-name = "Generated_Terrain"
+name = "terrgen"
 version = "0.1.0"
 edition = "2021"
 authors = ["Mimea005"]
