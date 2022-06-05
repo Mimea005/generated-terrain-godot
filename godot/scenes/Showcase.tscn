@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/Terrain.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/CameraController.gdns" type="Script" id=2]
+
+[sub_resource type="Skin" id=1]
+
+[node name="Showcase" type="Node"]
+
+[node name="CameraController" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0 )
+script = ExtResource( 2 )
+"Mouse sensitivity" = 50.0
+
+[node name="Camera" type="Camera" parent="CameraController"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+fov = 80.0
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.707107, -3.92124e-07, 0.707107, -0.632119, -0.448165, 0.632119, 0.3169, -0.893951, -0.316901, 0, 6.96304, 0 )
+light_energy = 2.0
+
+[node name="Flat" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -20 )
+skin = SubResource( 1 )
+Width = 5
+Height = 5
+
+[node name="CSGCylinder" type="CSGCylinder" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+radius = 0.1
+height = 2.0
+sides = 16
