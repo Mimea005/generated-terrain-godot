@@ -15,7 +15,6 @@ crate-type = ["cdylib"]
 
 [dependencies]
 gdnative = "0.10"
-gdrust = "0.1.0"
 gdextras = {version = "0.2", git = "https://github.com/Mimea005/gdextras.git"}
 num-traits = "0.2"
 rand = { version = "0.8.5", features = ["small_rng"] }

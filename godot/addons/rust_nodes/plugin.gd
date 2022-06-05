@@ -24,8 +24,19 @@ func _enter_tree():
         terrain_icon
     )
 
+    add_custom_type(
+        "BasicTerrain",
+        "MeshInstance",
+        preload("res://addons/rust_nodes/BasicTerrain.gdns"),
+        terrain_icon
+    )
 
+
+# Add a remove for each registered custom type to clean up
 func _exit_tree():
+
+    remove_custom_type("CameraController")
+
     remove_custom_type("FlatTerrain")
-    # Add a remove for each registered custom type to clean up
+    remove_custom_type("BasicTerrain")
 
