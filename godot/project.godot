@@ -11,8 +11,12 @@ config_version=4
 [application]
 
 config/name="Generated Terrain"
-run/main_scene="res://scenes/Showcase.tscn"
+run/main_scene="res://scenes/ShowCase.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/editor_icon_previewer/plugin.cfg", "res://addons/rust_nodes/plugin.cfg" )
 
 [input]
 

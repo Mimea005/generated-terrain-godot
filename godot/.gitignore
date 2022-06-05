@@ -4,5 +4,6 @@
 ## Template proccured from (https://github.com/github/gitignore/blob/main/Godot.gitignore)
 # Godot specific ignores
 .import/
+addons/editor_icon_previewer
 export.cfg
 export_presets.cfg

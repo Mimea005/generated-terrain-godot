@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/godot/.import" />
+      <excludeFolder url="file://$MODULE_DIR$/godot/addons/editor_icon_previewer" />
+      <excludeFolder url="file://$MODULE_DIR$/godot/bin" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
